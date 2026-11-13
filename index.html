@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <script src="script.js" defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Планировщик ухода за аккумуляторами устройств.">
+    <title>Заряд — помощник для аккумуляторов</title>
+
+<link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+    <header>
+      <a href="#" aria-label="Заряд — на главную">ЗАРЯД</a>
+      <nav aria-label="Основная навигация">
+        <a href="#devices">Устройства</a>
+        <a href="#schedule">Расписание</a>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="page-title">
+        <p>Планировщик ухода за батареями</p>
+        <h1 id="page-title">Всё под контролем</h1>
+        <p>Напоминания помогут не забыть вовремя включить устройства и проверить их аккумуляторы.</p>
+        <p><strong>6 устройств</strong> <span>·</span> Демонстрационные данные</p>
+      </section>
+
+      <section id="schedule" aria-labelledby="schedule-title">
+        <h2 id="schedule-title">Ближайшее напоминание</h2>
+        <p>Включить рабочий ноутбук</p>
+        <time datetime="2026-11-12T10:00">12 ноября, 10:00</time>
+
+         <!--<button id="reminder-toggle" type="button" aria-pressed="false">
+          Включить напоминание
+         </button> -->
+
+        <p id="reminder-status" role="status">Напоминание выключено</p>
+        <button id="reminder-toggle" type="button" aria-pressed="false">
+         Напоминание
+        </button>
+
+      </section>
+
+      <section id="devices" aria-labelledby="devices-title">
+        <h2 id="devices-title">Мои устройства</h2>
+        <p>Следите за планом включения и обслуживания каждого аккумулятора.</p>
+
+        <div>
+          <article>
+            <h3>Телефон 1</h3>
+            <p>Сотовый телефон</p>
+            <p>Аккумулятор: литий-ионный</p>
+            <p>Следующее включение</p>
+            <time datetime="2026-11-13T10:00">13 ноября, 10:00</time>
+          </article>
+
+          <article>
+            <h3>Телефон 2</h3>
+            <p>Сотовый телефон</p>
+            <p>Аккумулятор: литий-ионный</p>
+            <p>Следующее включение</p>
+            <time datetime="2026-11-14T10:00">14 ноября, 10:00</time>
+          </article>
+
+          <article>
+            <h3>Телефон 3</h3>
+            <p>Сотовый телефон</p>
+            <p>Аккумулятор: литий-ионный</p>
+            <p>Следующее включение</p>
+            <time datetime="2026-11-15T10:00">15 ноября, 10:00</time>
+          </article>
+
+          <article>
+            <h3>Рабочий ноутбук</h3>
+            <p>Компьютер</p>
+            <p>Аккумулятор: ИБП</p>
+            <p>Следующее включение</p>
+            <time datetime="2026-11-12T09:00">12 ноября, 09:00</time>
+          </article>
+
+          <article>
+            <h3>Домашний ноутбук</h3>
+            <p>Компьютер</p>
+            <p>Аккумулятор: ИБП</p>
+            <p>Следующее включение</p>
+            <time datetime="2026-11-16T09:00">16 ноября, 09:00</time>
+          </article>
+
+          <article>
+            <h3>Шуруповёрт</h3>
+            <p>Электроинструмент</p>
+            <p>Аккумулятор: Li-ion, 18 В</p>
+            <p>Следующая проверка</p>
+            <time datetime="2026-11-18T12:00">18 ноября, 12:00</time>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="about-title">
+        <h2 id="about-title">О проекте</h2>
+        <details>
+          <summary>Как работает этот макет?</summary>
+          <p>Пока это только интерфейс с примерными данными: он не включает устройства и не отправляет настоящие уведомления.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      <p>ЗАРЯД · Личный планировщик аккумуляторов</p>
+    </footer>
+  </body>
+</html>
